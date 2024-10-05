@@ -1,0 +1,11 @@
+.mainContent {
+  display: flex;
+  background-color: #fafafa;
+  flex-grow: 1; /* Faz o Main Content ocupar o espaço restante */
+  min-height: 300px; /* Ajuste conforme necessário */
+  padding: 10px;
+  width: 100%; /* Preenche toda a largura */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

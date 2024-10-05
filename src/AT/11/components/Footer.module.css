@@ -1,0 +1,9 @@
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  width: 100%; /* Preenche toda a largura */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto; /* Garante que o footer fique no final da página */
+}

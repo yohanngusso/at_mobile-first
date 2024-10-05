@@ -1,0 +1,12 @@
+.gridContainer {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "globalMenu globalMenu ads"
+    "contextMenu mainContent ads"
+    "footer footer footer";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto 50px 1fr auto;
+  height: 100vh;
+  gap: 10px;
+}

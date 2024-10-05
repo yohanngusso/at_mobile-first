@@ -1,0 +1,53 @@
+.mainMenu {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.menuButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: block; /* Exibir o botão em dispositivos móveis */
+}
+
+.menuList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Ocultar a lista de menus por padrão */
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuOpen {
+    display: flex; /* Exibir a lista de menus quando o menu está aberto */
+}
+
+.menuList li {
+    margin: 10px 0;
+}
+
+.menuList a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .menuButton {
+        display: none; /* Ocultar o botão em dispositivos maiores */
+    }
+
+    .menuList {
+        display: flex; /* Exibir a lista de menus em dispositivos maiores */
+        flex-direction: row;
+    }
+
+    .menuList li {
+        margin: 0 10px;
+    }
+}

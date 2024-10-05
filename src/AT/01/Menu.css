@@ -1,0 +1,38 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.menu-logo {
+    flex: 1;
+}
+
+.menu-logo img {
+    height: 40px;
+}
+
+.menu-items {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-items a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-icon {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-icon img {
+    height: 30px;
+}

@@ -1,0 +1,9 @@
+.ads {
+  display: flex;
+  grid-area: ads;
+  background-color: #aaa;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}

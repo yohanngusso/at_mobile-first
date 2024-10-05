@@ -1,0 +1,43 @@
+/* Resetando margens e preenchimentos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos básicos do body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e9ecef; /* Cor de fundo geral */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Altura mínima da tela */
+  margin: 0;
+}
+
+/* Estilização global de tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilos gerais de botões */
+button {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}

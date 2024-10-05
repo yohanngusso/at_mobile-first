@@ -1,0 +1,10 @@
+.contextMenu {
+  background-color: #e0e0e0;
+  padding: 10px;
+  width: 100%; /* Ocupa toda a largura */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+

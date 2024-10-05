@@ -1,0 +1,9 @@
+.globalMenu {
+  display: flex;
+  grid-area: globalMenu;
+  background-color: #bbb;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

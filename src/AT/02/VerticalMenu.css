@@ -1,0 +1,66 @@
+.vertical-menu {
+    width: 250px;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ccc;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease;
+  }
+  
+  .vertical-menu.collapsed {
+    width: 40px; /* Largura quando o menu está recolhido */
+  }
+  
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .brand-logo {
+    width: 40px;
+    height: 40px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .vertical-menu.collapsed .brand-logo {
+    display: none; /* Esconde o logo quando o menu está recolhido */
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-right: 0; /* Reseta o margin-right */
+  }
+  
+  .vertical-menu.collapsed .menu-icon {
+    margin-left: auto; /* Move o ícone para a extrema direita */
+  }
+  
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px 0;
+  }
+  
+  .menu-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .vertical-menu.collapsed .menu-item {
+    opacity: 0; /* Esconde os itens do menu quando o menu está recolhido */
+  }
+  
+  .menu-item:hover {
+    background-color: #ddd;
+  }
+  

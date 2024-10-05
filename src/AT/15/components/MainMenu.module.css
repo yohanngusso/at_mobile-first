@@ -1,0 +1,33 @@
+.mainMenu {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.mainMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainMenu li {
+    margin: 0 10px;
+}
+
+.mainMenu a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .mainMenu ul {
+        flex-direction: column;
+    }
+
+    .mainMenu li {
+        margin: 10px 0;
+    }
+}

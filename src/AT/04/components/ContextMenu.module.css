@@ -1,0 +1,9 @@
+.contextMenu {
+  display: flex;
+  grid-area: contextMenu;
+  background-color: #ccc;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,51 @@
+/* Estilização básica de botões */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Ajustes globais de tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd; /* Adicionando borda para melhor visualização */
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Layout responsivo para telas maiores */
+@media (min-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .photo-section, .info-section, .icons-section {
+    flex: 1;
+    margin-right: 16px;
+  }
+
+  .photo-section:last-child, .info-section:last-child, .icons-section:last-child {
+    margin-right: 0;
+  }
+}

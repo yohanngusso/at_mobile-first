@@ -1,0 +1,38 @@
+.globalMenu {
+  background-color: #fff;
+  position: relative; /* Para o menu flutuar corretamente */
+}
+
+.menuButton {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  flex: 1;
+  width: 190%;
+}
+
+.menuItems {
+  position: absolute; /* Para que o menu fique sobre os elementos abaixo */
+  top: 100%; /* Fica logo abaixo do botão */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Para que fique acima de outros elementos */
+}
+
+.menuItems ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.menuItems li {
+  padding: 5px 10px;
+}
+
+.menuItems li:hover {
+  background-color: #f0f0f0; /* Destaque ao passar o mouse */
+}

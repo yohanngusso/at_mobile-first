@@ -1,0 +1,9 @@
+.headerTitle {
+  text-align: right;
+  font-size: 1.5rem;
+  padding: 10px;
+  background-color: #f0f0f0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

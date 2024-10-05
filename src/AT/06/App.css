@@ -1,0 +1,24 @@
+.shopping-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.shopping-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.shopping-list li:hover {
+    background-color: #e0e0e0;
+}
+
+body.dark-mode .shopping-list li:hover {
+    background-color: #444;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 20px;
+}

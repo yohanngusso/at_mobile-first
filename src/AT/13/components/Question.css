@@ -1,0 +1,20 @@
+.question {
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    margin: 5px 0;
+}
+
+.option.selected {
+    background-color: #ddd;
+}
+
+.justification {
+    margin-top: 10px;
+}

@@ -1,0 +1,9 @@
+.mainContent {
+  display: flex;
+  grid-area: mainContent;
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

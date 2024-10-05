@@ -1,0 +1,115 @@
+/* Mobile First */
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o layout ocupe toda a altura da tela */
+  gap: 10px; /* Espaçamento entre os elementos */
+  padding: 10px; /* Espaçamento interno */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Espaça os elementos nas extremidades */
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+
+.contextMenu {
+  background-color: #e0e0e0;
+  padding: 10px;
+  width: 100%; /* Preenche toda a largura */
+}
+
+.mainContent {
+  background-color: #fafafa;
+  flex-grow: 1; /* Faz o Main Content ocupar o espaço restante */
+  padding: 10px;
+  width: 100%; /* Preenche toda a largura */
+}
+
+.ads {
+  background-color: #ddd;
+  padding: 10px;
+  width: 100%; /* Preenche toda a largura */
+  text-align: center;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  width: 100%; /* Preenche toda a largura */
+  text-align: center;
+  margin-top: auto; /* Garante que o footer fique no final da página */
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  .appContainer {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "globalMenu globalMenu ads"
+      "contextMenu mainContent ads"
+      "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 50px 1fr auto;
+    height: 100vh;
+    gap: 10px;
+  }
+
+  .header {
+    grid-area: header;
+    background-color: #ddd;
+  }
+
+  .contextMenu {
+    display: flex;
+    grid-area: contextMenu;
+    background-color: #ccc;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainContent {
+    display: flex;
+    grid-area: mainContent;
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ads {
+    display: flex;
+    grid-area: ads;
+    background-color: #aaa;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer {
+    display: flex;
+    grid-area: footer;
+    background-color: #ddd;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .globalMenu {
+    display: flex;
+    grid-area: globalMenu;
+    background-color: #bbb;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
