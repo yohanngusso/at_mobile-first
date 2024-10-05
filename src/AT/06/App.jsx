@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import ShoppingList from './components/ShoppingList.jsx';
-import './app.css';
+import './App.css';
 
 const App = () => {
     const [darkMode, setDarkMode] = useState(false);
